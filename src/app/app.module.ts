@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PrimengModule } from './Shared/primeng/primeng.module';
+import { AdminRoutingModule } from './Feature-Module/admin/admin-routing.module';
+import { SharedModule } from './Shared-Module/shared.module';
 
 
 @NgModule({
@@ -12,8 +13,8 @@ import { PrimengModule } from './Shared/primeng/primeng.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PrimengModule
-
+    AdminRoutingModule,
+    
 
   ],
   providers: [],

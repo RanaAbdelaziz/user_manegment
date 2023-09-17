@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminComponent } from './admin.component';
 
 const routes: Routes = [
   {
-    path:' ',
-    loadChildren : () => import ('./Feature-Module/admin/admin.module').then(m=> m.AdminModule)
+    path:'',
+    component:AdminComponent
   }
 ];
 
@@ -12,7 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {
-
-
- }
+export class AdminRoutingModule { }
